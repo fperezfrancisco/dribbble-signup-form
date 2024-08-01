@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <main class="mainBlock grid mainContainer roboto-regular">
+      <div class="artContainer flex"></div>
+      <div class="formContainer flexColumn">
+        <form action="/" method="get" class="formBox flexColumn" id="mainForm">
+          <h1 class="formTitle">Welcome to Dribbble</h1>
+          <p class="subheading formSubheading">Come on and create an account</p>
+          <div class="errorBox flex" id="errorMessage"></div>
+          <ul class="formList noList flexColumn">
+            <li class="formLi flexColumn">
+              <label for="fullName" class="formLabel">Full name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="formInput"
+                required
+              />
+              <span class="validationRow"><i class="bx bxs-x-circle"></i></span>
+            </li>
+            <li class="formLi flexColumn">
+              <label for="username" class="formLabel">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="userame"
+                class="formInput"
+                required
+              />
+              <span class="validationRow"><i class="bx bxs-x-circle"></i></span>
+            </li>
+            <li class="formLi flexColumn">
+              <label for="email" class="formLabel">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="formInput"
+                required
+              />
+              <span class="validationRow"><i class="bx bxs-x-circle"></i></span>
+            </li>
+            <li class="formLi flexColumn">
+              <label for="Password" class="formLabel">Password</label>
+              <input
+                type="password"
+                id="Password"
+                name="Password"
+                class="formInput"
+                required
+              />
+              <span class="validationRow"><i class="bx bxs-x-circle"></i></span>
+            </li>
+            <li class="formLi flexColumn">
+              <label for="confirmPassword" class="formLabel"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                class="formInput"
+                required
+              />
+              <span class="validationRow"><i class="bx bxs-x-circle"></i></span>
+            </li>
+            <li class="formLi flex termsLi">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                class="formTermsInput"
+              />
+              <label for="fullName" class="formLabel"
+                >I agree with the website's
+                <span class="specialText">terms and conditions</span>
+              </label>
+            </li>
+          </ul>
+          <button class="formBtn" type="submit" id="submitBtn">Sign Up</button>
+          <div class="logInBox flex">
+            <p class="formPara">Already a member?</p>
+            <a href="#" class="signInLink specialText">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
